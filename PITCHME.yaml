@@ -1,3 +1,4 @@
 theme: moon
 footnote: "Георги Божинов - HackSoft"
 background: assets/haskell.jpg
+highlight: monokai
