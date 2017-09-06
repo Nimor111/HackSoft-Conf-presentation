@@ -12,7 +12,7 @@
 5. Защо харесвам ФП?
 
 #HSLIDE
-## Представяне
+### Представяне
 ```haskell
 Insert introduction here :: String
 ```
