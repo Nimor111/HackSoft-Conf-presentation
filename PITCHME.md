@@ -49,7 +49,7 @@ all = foldr (^) True
 
 #HSLIDE
 ### 2. Някои принципи на ФП
-* Map, filter, reduce ( = foldr )
+* Map, filter, reduce (=foldr)
 
 ```python
 xs = [1, 2, 3, 4]
