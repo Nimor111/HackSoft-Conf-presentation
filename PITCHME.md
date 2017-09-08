@@ -14,7 +14,7 @@
 #HSLIDE
 ### 0. Представяне
 ```haskell
-Insert introduction here :: String
+insert introduction here :: String
 ```
 
 #HSLIDE
@@ -22,3 +22,63 @@ Insert introduction here :: String
 * Нов стил на програмиране
 * Чистота - в кода и в програмите
 * Функции, функции
+
+#HSLIDE
+### 2. Някои принципи на ФП
+* Краткост, модулярност
+1. Лесен и разбираем за четене код, лесно се тества, лесно за обобщаване на операции за различни типове.
+
+```haskell
+data List a = Nil | Cons a (List a)
+
+sum Nil = 0
+sum (Cons a list) = a + sum list
+
+sum = foldr (+) 0
+```
+
+#HSLIDE
+### 2. Някои принципи на ФП
+2. Използване на една фунцкия за имплементацията на много други.
+
+```haskell
+product = foldr (*) 1
+any = foldr (v) False
+all = foldr (^) True
+```
+
+#HSLIDE
+### 2. Някои принципи на ФП
+3. Map, filter, reduce ( = foldr )
+
+```python
+xs = [1, 2, 3, 4]
+mapped = map(lambda x: x + 1, xs)
+```
+
+```python
+filtered = filter(lambda x: x >= 2, xs)
+```
+
+```python
+sum = reduce(lambda x, acc: acc + x, xs)
+```
+
+#HSLIDE
+### 2. Някои принципи на ФП
+4. Мързеливост
+
+```python
+for i in range(100000):
+    yield(i)
+```
+
+```haskell
+take 10 [1..]
+```
+
+Синхронизация, функция се изпълнява само толкова, колкото е нужно. 
+
+#HSLIDE
+### 2. Някои принципи на ФП
+5. Казваме какво да се изпълни, не как.
