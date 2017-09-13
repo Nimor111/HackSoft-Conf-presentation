@@ -21,6 +21,7 @@ insert introduction here :: String
 * Нов стил на програмиране
 * Чистота - в кода и в програмите
 * Функции, функции
+* Два нови подхода на програмиране - мързеливост + композиция
 
 #HSLIDE
 ### 2. Някои принципи на ФП
@@ -30,15 +31,17 @@ insert introduction here :: String
 ```haskell
 data List a = Nil | Cons a (List a)
 
-sum Nil = 0
+sum Nil = 0 
 sum (Cons a list) = a + sum list
+
+-- 0 and + -> only specific to sum elements
 
 sum = foldr (+) 0
 ```
 
 #HSLIDE
 ### 2. Някои принципи на ФП
-* Използване на една фунцкия за имплементацията на много други.
+* Използване на една функция за имплементацията на много други.
 
 ```haskell
 product = foldr (*) 1
@@ -62,6 +65,28 @@ filtered = filter(lambda x: x >= 2, xs)
 ```python
 sum = reduce(lambda x, acc: acc + x, xs)
 ```
+
+#HSLIDE
+### 2. Някои принципи на ФП
+* Композиция на функции
+```haskell
+doubleAll list = foldr (\n -> n * 2) Nil list
+```
+```haskell
+doubleAll = foldr doubleList Nil
+  where 
+    double n list = Cons (2 * n) list
+```
+```haskell
+double = fandcons double
+  where
+    fandcons f n list = Cons (f n) list
+```
+```haskell
+fandcons f = Cons . f 
+````
+
+* Правило на композицията -> (Conf . f) a = Cons (f a)
 
 #HSLIDE
 ### 2. Някои принципи на ФП
