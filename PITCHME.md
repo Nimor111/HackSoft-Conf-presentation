@@ -13,7 +13,7 @@
 #HSLIDE
 ### 0. Представяне
 ```haskell
-insert introduction here :: String
+insert introduction here :: Text
 ```
 
 #HSLIDE
