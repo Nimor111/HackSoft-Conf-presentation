@@ -78,7 +78,7 @@ doubleAll = foldr doubleList Nil
     double n list = Cons (2 * n) list
 ```
 ```haskell
-double = fandcons double
+doubleAll = fandcons double
   where
     fandcons f n list = Cons (f n) list
 ```
@@ -86,7 +86,7 @@ double = fandcons double
 fandcons f = Cons . f 
 ```
 
-* Правило на композицията -> (Conf . f) a = Cons (f a)
+* Правило на композицията -> (Cons . f) a = Cons (f a)
 
 #HSLIDE
 ### 2. Някои принципи на ФП
