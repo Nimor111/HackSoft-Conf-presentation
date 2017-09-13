@@ -84,7 +84,7 @@ double = fandcons double
 ```
 ```haskell
 fandcons f = Cons . f 
-````
+```
 
 * Правило на композицията -> (Conf . f) a = Cons (f a)
 
