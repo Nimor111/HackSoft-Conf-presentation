@@ -53,17 +53,16 @@ all = foldr (^) True
 ### 2. Някои принципи на ФП
 * Map, filter, reduce (=foldr)
 
-```python
-xs = [1, 2, 3, 4]
-mapped = map(lambda x: x + 1, xs)
+```haskell
+map (+1) [1, 2, 3, 4]
 ```
 
-```python
-filtered = filter(lambda x: x >= 2, xs)
+```haskell
+filter odd [1, 2, 3, 4]
 ```
 
-```python
-sum = reduce(lambda x, acc: acc + x, xs)
+```haskell
+foldr Cons Nil [1, 2, 3, 4]
 ```
 
 #HSLIDE
@@ -92,9 +91,8 @@ fandcons f = Cons . f
 ### 2. Някои принципи на ФП
 * Мързеливост
 
-```python
-for i in range(100000):
-    yield(i)
+```haskell
+( sumFirstTwo . quickSort ) xs
 ```
 
 ```haskell
