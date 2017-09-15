@@ -1,5 +1,7 @@
 #HSLIDE
 ## Being functional
+Георги Божинов
+HackSoft
 
 #HSLIDE
 ## Съдържание
