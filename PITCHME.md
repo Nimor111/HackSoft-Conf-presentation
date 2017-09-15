@@ -18,11 +18,17 @@ insert introduction here :: Text
 ```
 
 #HSLIDE
+![Haskell God](assets/CM_FCzGUAAQyQAt.jpg)
+
+#HSLIDE
 ### 1. Какво е ФП?
 * Нов стил на програмиране
 * Чистота - в кода и в програмите
 * Функции, функции
 * Два нови подхода на програмиране - мързеливост + композиция
+
+#HSLIDE
+![Haskell God](assets/Haskell-logo-revolution.png)
 
 #HSLIDE
 ### 2. Някои принципи на ФП
