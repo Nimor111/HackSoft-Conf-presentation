@@ -1,6 +1,6 @@
 #HSLIDE
 ## Being functional
-Георги Божинов
+HackSoft Conf 2017, Георги Божинов
 
 #HSLIDE
 ## Съдържание
