@@ -28,7 +28,7 @@ insert introduction here :: Text
 * Два нови подхода на програмиране - мързеливост + композиция
 
 #HSLIDE
-![Haskell God](assets/Haskell-logo-revolution.png)
+<img src="assets/Haskell-logo-revolution.png" width="600">
 
 #HSLIDE
 ### 2. Някои принципи на ФП
