@@ -77,6 +77,7 @@ foldr Cons Nil [1, 2, 3, 4]
 * Композиция на функции
 ```haskell
 doubleEven = map (*2) . filter even  
+```
 
 * Правило на композицията -> (f . g) a = f (g a)
 
