@@ -76,23 +76,9 @@ foldr Cons Nil [1, 2, 3, 4]
 ### 2. Някои принципи на ФП
 * Композиция на функции
 ```haskell
-doubleAll list = foldr (\n -> n * 2) Nil list
-```
-```haskell
-doubleAll = foldr doubleList Nil
-  where 
-    double n list = Cons (2 * n) list
-```
-```haskell
-doubleAll = fandcons double
-  where
-    fandcons f n list = Cons (f n) list
-```
-```haskell
-fandcons f = Cons . f 
-```
+doubleEven = map (*2) . filter even  
 
-* Правило на композицията -> (Cons . f) a = Cons (f a)
+* Правило на композицията -> (f . g) a = f (g a)
 
 #HSLIDE
 ### 2. Някои принципи на ФП
